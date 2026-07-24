@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" th:href="@{/css/student-portal.css}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h2>Student Portal</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-book"></i>
+                Courses
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar"></i>
+                Timetable
+            </li>
+
+            <li>
+                <i class="fa-solid fa-file-lines"></i>
+                Assignments
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                Results
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+
+            <li id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>Welcome, Student 👋</h1>
+
+            <div class="student-info">
+
+                <img src="https://i.pravatar.cc/100?img=15" alt="Student">
+
+                <span>Student</span>
+
+            </div>
+
+        </div>
+
+        <!-- Welcome Banner -->
+
+        <div class="banner">
+
+            <div>
+
+                <h2>Welcome Back!</h2>
+
+                <p>Have a productive day. Check your tasks and announcements.</p>
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h3>6</h3>
+
+                <p>Courses</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-file"></i>
+
+                <h3>4</h3>
+
+                <p>Assignments</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>95%</h3>
+
+                <p>Attendance</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>8.7</h3>
+
+                <p>CGPA</p>
+
+            </div>
+
+        </div>
+
+        <!-- Content -->
+
+        <div class="content">
+
+            <!-- Announcements -->
+
+            <div class="box">
+
+                <h2>Announcements</h2>
+
+                <ul>
+
+                    <li>📢 Semester Exams start next Monday.</li>
+
+                    <li>📢 AI Assignment due this Friday.</li>
+
+                    <li>📢 College Symposium registration is open.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Upcoming Tasks -->
+
+            <div class="box">
+
+                <h2>Upcoming Tasks</h2>
+
+                <ul>
+
+                    <li>✔ Java Mini Project</li>
+
+                    <li>✔ React Assignment</li>
+
+                    <li>✔ Database Record Submission</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+
+        <div class="bottom">
+
+            <!-- Timetable -->
+
+            <div class="box">
+
+                <h2>Today's Timetable</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Subject</th>
+                    </tr>
+
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Java</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Database</td>
+                    </tr>
+
+                    <tr>
+                        <td>2:00 PM</td>
+                        <td>React</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Profile -->
+
+            <div class="box profile">
+
+                <img src="https://i.pravatar.cc/150?img=15" alt="Student">
+
+                <h3>Student Name</h3>
+
+                <p>Computer Science</p>
+
+                <p>Final Year</p>
+
+                <button>Edit Profile</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script th:src="@{/js/student-portal.js}"></script>
+
+</body>
+
+</html>
