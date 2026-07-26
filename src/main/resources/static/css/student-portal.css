@@ -195,7 +195,7 @@ table th{
 }
 
 table td{
-    align-items: center;
+    text-align: center;
     padding:12px;
     border-bottom:1px solid #ddd;
 }
